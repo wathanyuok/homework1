@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        .border {
+            width: 30%;
+            border: 1px solid grey;
+            border-radius: 25px;
+            padding-top: 50px;
+            padding-right: 40px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"],  input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="./index.html">Home</a> |
+        <a href="./education.html">Education</a> |
+        <a href="./work.html">Work Experience</a> |
+        <a href="#">Contact</a> |
+        <hr />
+        <h1>Contact Me</h1>
+        <div class="border">
+            <p>Enter your info..</p>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <label for="fname">Your Name:</label><br>
+                <input type="text" id="fname" name="name" size="50px" value=""><br><br>
+                <label for="lname">Your E-mail:</label><br>
+                <input type="email" id="lname" name="lname" size="50px%" value=""><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <select class="opt" name="gender">
+                    <option value="#" selected disabled hidden>select..</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+
+                <p><label for="message">Messages</label></p>
+                <textarea id="message" name="message" rows="10" cols="52px%"></textarea><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear Form">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
